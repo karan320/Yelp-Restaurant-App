@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "food",
+    "name": "Food Search",
     "slug": "food",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Food_app_icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
