@@ -5,7 +5,7 @@ import { withNavigation } from 'react-navigation';
 
 const RestaurantList = ({ title, restaurants, navigation }) => {
    
-    if(restaurants.length === 0 )
+    if(restaurants.length === 0)
         return null;
 
     // console.log(restaurants);

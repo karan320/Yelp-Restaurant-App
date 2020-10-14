@@ -20,7 +20,7 @@ const SearchBar = (props) => {
                 placeholder= 'search'
                 value= {props.term}
                 onChangeText= {(value) => props.onTermChange(value)}
-                onEndEditing= { () => props.onTermSubmit() }
+                onEndEditing= {() => props.onTermSubmit() }
             />
             
         </View>

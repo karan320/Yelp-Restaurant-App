@@ -27,7 +27,11 @@ const SearchScreen = () => {
                 <SearchBar 
                     term= {term}
                     onTermChange= {(newTerm) => setTerm(newTerm)}
-                    onTermSubmit = {() => searchApi(term)} 
+                    onTermSubmit= {() => {
+                        if(term === '')
+                            return searchApi('dosa');    
+                        searchApi(term)
+                    }} 
                 />   
 
                 <RestaurantList 
@@ -39,7 +43,6 @@ const SearchScreen = () => {
                     title= 'Bit Pricer'
                     restaurants= {filterRestaurantsByPrice('$$')}
                 />
-
 
                 <RestaurantList 
                     title= 'Big Spender'
