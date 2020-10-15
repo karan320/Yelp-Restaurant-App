@@ -5,7 +5,8 @@ import RestaurantList from '../components/RestaurantList';
 import SearchBar from '../components/SearchBar';
 import useRestaurants from '../hooks/useRestaurants';
 
-const SearchScreen = () => {
+
+export default const SearchScreen = () => {
     
     const [term, setTerm] = useState('');
     const [searchApi, errMessage, restaurants] = useRestaurants();
@@ -67,5 +68,3 @@ const styles = StyleSheet.create({
        color:'red',
    } 
 });
-
-export default SearchScreen;
